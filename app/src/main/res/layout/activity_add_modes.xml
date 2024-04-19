@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#106491"
+    tools:context=".AddModes">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe"
+        android:textColor="#FFB74D"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:shadowColor="#80000000"
+        android:shadowDx="10"
+        android:shadowDy="20"
+        android:shadowRadius="10" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Choose Game Mode"
+        android:textColor="#FFB74D"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:shadowColor="#80000000"
+        android:shadowDx="3"
+        android:shadowDy="6"
+        android:shadowRadius="10" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+            <RadioGroup
+                android:id="@+id/radioGroupMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonPVP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="PVP"
+                    android:textSize="20dp"
+                    android:textColor="#FFB74D"
+                    android:textStyle="bold"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="3"
+                    android:shadowDy="6"
+                    android:shadowRadius="10" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonPVC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PVC"
+                    android:textSize="20dp"
+                    android:textColor="#FFB74D"
+                    android:textStyle="bold"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="3"
+                    android:shadowDy="6"
+                    android:shadowRadius="10" />
+
+            </RadioGroup>
+
+    </LinearLayout>
+
+    <!-- Layout for PVP mode after the PVP radio button is clicked -->
+    <LinearLayout
+        android:id="@+id/layoutPVP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Player Names"
+            android:textColor="#FFB74D"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:shadowColor="#80000000"
+            android:shadowDx="3"
+            android:shadowDy="6"
+            android:shadowRadius="10"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="256dp"
+            android:layout_height="41dp"
+            android:background="#D4EBF8"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp">
+
+            <EditText
+                android:inputType="text"
+                android:maxLines="1"
+                android:id="@+id/playerNamePvp1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="18sp"
+                android:hint="Player name for X"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="256dp"
+            android:layout_height="41dp"
+            android:background="#D4EBF8"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:inputType="text"
+                android:maxLines="1"
+                android:id="@+id/playerNamePvp2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="18sp"
+                android:hint="Player name for O"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- Layout for PVC mode after the PVC radio button is clicked-->
+    <LinearLayout
+        android:id="@+id/layoutPVC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Name"
+            android:textColor="#FFB74D"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:shadowColor="#80000000"
+            android:shadowDx="3"
+            android:shadowDy="6"
+            android:shadowRadius="10"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="256dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center"
+            android:background="#D4EBF8"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <EditText
+                android:inputType="text"
+                android:maxLines="1"
+                android:id="@+id/playerNamePVC"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:textSize="18sp"
+                android:hint="Player name"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your symbol"
+            android:textColor="#FFB74D"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:shadowColor="#80000000"
+            android:shadowDx="3"
+            android:shadowDy="6"
+            android:shadowRadius="10"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupSymbol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBtnX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:layout_marginEnd="20dp"
+                android:textSize="20dp"
+                android:textColor="#FFB74D"
+                android:textStyle="bold"
+                android:shadowColor="#80000000"
+                android:shadowDx="3"
+                android:shadowDy="6"
+                android:shadowRadius="10"/>
+
+            <RadioButton
+                android:id="@+id/radioBtnO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O"
+                android:textSize="20dp"
+                android:textColor="#FFB74D"
+                android:textStyle="bold"
+                android:shadowColor="#80000000"
+                android:shadowDx="3"
+                android:shadowDy="6"
+                android:shadowRadius="10"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="Start Game"
+        android:textColor="#FFB74D"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</LinearLayout>
