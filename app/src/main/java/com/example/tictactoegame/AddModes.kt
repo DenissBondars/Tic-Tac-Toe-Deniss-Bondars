@@ -87,7 +87,7 @@ class AddModes : AppCompatActivity() {
 
                 if (playerXName.isEmpty() || playerOName.isEmpty()) {
                     // Check if player name fields are empty
-                    Toast.makeText(this, "Please enter player names", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Please enter player names", Toast.LENGTH_SHORT).show();
                     return@setOnClickListener
                 }
 
@@ -108,14 +108,14 @@ class AddModes : AppCompatActivity() {
 
                 if (playerName.isEmpty()) {
                     // Check if player name field is empty
-                    Toast.makeText(this, "Please enter your name", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Please enter your name", Toast.LENGTH_SHORT).show();
                     return@setOnClickListener
                 }
 
 
                 if (checkSelectedSymbol == -1) {
                     // Check if player symbol choice is empty
-                    Toast.makeText(this, "Please choose your symbol", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Please choose your symbol", Toast.LENGTH_SHORT).show();
                     return@setOnClickListener
                 }
 
