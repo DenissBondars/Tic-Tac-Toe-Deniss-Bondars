@@ -8,7 +8,7 @@
 // the Kotlin language, artificial intelligence "ChatGPT" was used for some code fragments,
 // mostly for PVC mode realization.
 
-// Link to GitHub project:
+// Link to GitHub project: https://github.com/DenissBondars/Tic-Tac-Toe-Deniss-Bondars.git
 
 package com.example.tictactoegame
 
